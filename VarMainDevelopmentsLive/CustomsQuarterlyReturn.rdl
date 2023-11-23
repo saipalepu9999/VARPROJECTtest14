@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="QuarterlyReturnCaptionLbl">
+          <DataField>QuarterlyReturnCaptionLbl</DataField>
+        </Field>
+        <Field Name="BillofEntryCaptionLbl">
+          <DataField>BillofEntryCaptionLbl</DataField>
+        </Field>
+        <Field Name="PCSINoCaptionLbl">
+          <DataField>PCSINoCaptionLbl</DataField>
+        </Field>
+        <Field Name="DescriptionCaptionLbl">
+          <DataField>DescriptionCaptionLbl</DataField>
+        </Field>
+        <Field Name="OpeningBalCaptionLbl">
+          <DataField>OpeningBalCaptionLbl</DataField>
+        </Field>
+        <Field Name="DetailsofGoodsCaptionLbl">
+          <DataField>DetailsofGoodsCaptionLbl</DataField>
+        </Field>
+        <Field Name="SpecifiedPurposeCaptionLbl">
+          <DataField>SpecifiedPurposeCaptionLbl</DataField>
+        </Field>
+        <Field Name="GoodsManufacturedCaptionLbl">
+          <DataField>GoodsManufacturedCaptionLbl</DataField>
+        </Field>
+        <Field Name="ValueofGoodsCaptionLbl">
+          <DataField>ValueofGoodsCaptionLbl</DataField>
+        </Field>
+        <Field Name="QuantityofGoodsCaptionLbl">
+          <DataField>QuantityofGoodsCaptionLbl</DataField>
+        </Field>
+        <Field Name="QuantityConsumedCaptionLbl">
+          <DataField>QuantityConsumedCaptionLbl</DataField>
+        </Field>
+        <Field Name="QuantityReexportedCaptionLbl">
+          <DataField>QuantityReexportedCaptionLbl</DataField>
+        </Field>
+        <Field Name="QuantityClearedCaptionLbl">
+          <DataField>QuantityClearedCaptionLbl</DataField>
+        </Field>
+        <Field Name="ClosingBalCaptionLbl">
+          <DataField>ClosingBalCaptionLbl</DataField>
+        </Field>
+        <Field Name="DescCaptionLbl">
+          <DataField>DescCaptionLbl</DataField>
+        </Field>
+        <Field Name="QuantityCaptionLbl">
+          <DataField>QuantityCaptionLbl</DataField>
+        </Field>
+        <Field Name="ValueCaptionLbl">
+          <DataField>ValueCaptionLbl</DataField>
+        </Field>
+        <Field Name="FormCaptionLbl">
+          <DataField>FormCaptionLbl</DataField>
+        </Field>
+        <Field Name="OneCaptionLbl">
+          <DataField>OneCaptionLbl</DataField>
+        </Field>
+        <Field Name="TwoCaptionLbl">
+          <DataField>TwoCaptionLbl</DataField>
+        </Field>
+        <Field Name="ThreeCaptionLbl">
+          <DataField>ThreeCaptionLbl</DataField>
+        </Field>
+        <Field Name="FourCaptionLbl">
+          <DataField>FourCaptionLbl</DataField>
+        </Field>
+        <Field Name="FiveCaptionLbl">
+          <DataField>FiveCaptionLbl</DataField>
+        </Field>
+        <Field Name="SixCaptionLbl">
+          <DataField>SixCaptionLbl</DataField>
+        </Field>
+        <Field Name="SevenCaptionLbl">
+          <DataField>SevenCaptionLbl</DataField>
+        </Field>
+        <Field Name="EightCaptionLbl">
+          <DataField>EightCaptionLbl</DataField>
+        </Field>
+        <Field Name="NineCaptionLbl">
+          <DataField>NineCaptionLbl</DataField>
+        </Field>
+        <Field Name="TenCaptionLbl">
+          <DataField>TenCaptionLbl</DataField>
+        </Field>
+        <Field Name="ElevenCaptionLbl">
+          <DataField>ElevenCaptionLbl</DataField>
+        </Field>
+        <Field Name="TwelveCaptionLbl">
+          <DataField>TwelveCaptionLbl</DataField>
+        </Field>
+        <Field Name="ThirteenCaptionLbl">
+          <DataField>ThirteenCaptionLbl</DataField>
+        </Field>
+        <Field Name="FourteenCaptionLbl">
+          <DataField>FourteenCaptionLbl</DataField>
+        </Field>
+        <Field Name="FifteenCaptionLbl">
+          <DataField>FifteenCaptionLbl</DataField>
+        </Field>
+        <Field Name="TotalCaptionLbl">
+          <DataField>TotalCaptionLbl</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="Item_Category_Code">
+          <DataField>Item_Category_Code</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="QuantityFormat">
+          <DataField>QuantityFormat</DataField>
+        </Field>
+        <Field Name="PcNo">
+          <DataField>PcNo</DataField>
+        </Field>
+        <Field Name="PCDate">
+          <DataField>PCDate</DataField>
+        </Field>
+        <Field Name="BillofEntryNo">
+          <DataField>BillofEntryNo</DataField>
+        </Field>
+        <Field Name="BillofEntryDate">
+          <DataField>BillofEntryDate</DataField>
+        </Field>
+        <Field Name="Currency_Code">
+          <DataField>Currency_Code</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
